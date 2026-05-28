@@ -48,7 +48,8 @@ public class UserService {
                 passwordEncoder.encode(dto.getPassword())
         );
         // DEFAULT ROLE
-        if(dto.getEmail().equals("admin@gmail.com")) {
+        if(dto.getEmail().equals("admin@gmail.com")
+                || dto.getEmail().equals("yashdabhade.official@gmail.com")) {
 
             user.setRole("ROLE_ADMIN");
         } else {
