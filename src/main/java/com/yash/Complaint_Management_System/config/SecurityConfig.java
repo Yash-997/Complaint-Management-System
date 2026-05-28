@@ -100,8 +100,8 @@ public class SecurityConfig {
                         // PUBLIC APIs
 
                         .requestMatchers(
-                                "/users/register",
-                                "/users/login"
+                                "/api/users/register",
+                                "/api/users/login"
                         ).permitAll()
                         // ADMIN APIs
                         .requestMatchers("/api/admin/**")
